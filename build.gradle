@@ -31,8 +31,8 @@ tasks.withType(JavaCompile) {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "my-first-pipeline"   // 프로젝트 식별자
-        property "sonar.host.url", "http://3.39.236.0/"   // SonarQube 서버 URL
-        property "sonar.login", System.getenv("SONAR_TOKEN") // Jenkins에서 주입된 토큰
+        property "sonar.projectKey", "my-first-pipeline"
+        property "sonar.host.url", "http://3.39.236.0:9000"   // 기존 컨테이너 포트
+        property "sonar.login", System.getenv("SONAR_TOKEN")
     }
 }
