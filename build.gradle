@@ -32,7 +32,7 @@ tasks.withType(JavaCompile) {
 sonarqube {
     properties {
         property "sonar.projectKey", "my-first-pipeline"
-        property "sonar.host.url", "http://localhost:9000"   // 기존 컨테이너 포트
+        property "sonar.host.url", "http://43.202.40.85:9000"   // 기존 컨테이너 포트
         property "sonar.login", System.getenv("SONAR_TOKEN")
     }
 }
